@@ -73,14 +73,30 @@ header {
 }
 
 .logo {
-    background: url("../images/NaoiseGaffney_Final3-300x300.jpg");
+    /* background: url("../images/NaoiseGaffney_Final3-300x300.jpg"); */
+    background: url("../images/NaoiseGaffneyPanamaHat.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 360px;
-    transition: all .5s ease-in-out;
+    /* transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out; */
+    animation-name: gaff-zoom;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes gaff-zoom {
+    from{
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    to{
+        transform: scale(1);
+    }
 }
 
 .name {
