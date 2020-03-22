@@ -7,11 +7,11 @@
 }
 
 .bg-color-three-reasons {
-    background: #ffffff;
+    background-color: #fff;
 }
 
 .bg-color-personal-info {
-    background: #f4f4f4;
+    background-color: #f4f4f4;
 }
 
 .bg-color-work-history {
@@ -19,7 +19,7 @@
 }
 
 .bg-color-contact {
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 .ui-menu-color-home {
@@ -38,6 +38,23 @@
     background-color: #525252;
 }
 
+.row-table {
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
 /* --- Special Paddings, Margins, and Text --- */
 h1, h2, h3, h4 {
     margin: 0;
@@ -48,7 +65,7 @@ h1, h2, h3, h4 {
 }
 
 .general-sub {
-    font-family: Exo, sans-serif;
+    font-family: "Exo", sans-serif;
     font-weight: 300;
     color: #fafafa;
 }
@@ -68,8 +85,9 @@ h1, h2, h3, h4 {
     float: none;
 }
 
+.history-heading,
 .section-heading {
-    font-family: Exo, sans-serif;
+    font-family: "Exo", sans-serif;
     font-weight: 300;
     margin-top: 25px;
     margin-bottom: 40px;
@@ -293,6 +311,7 @@ footer {
 .progress {
     position: relative;
     height: 25px;
+    /* height: 30px; */
     margin-bottom: 4px;
 }
 
@@ -301,13 +320,18 @@ footer {
     left: 0px;
     font-weight: 400;
     padding: 3px 30px 2px 10px;
+    /* padding: 3px 30px 20px 10px; */
     color: #fafafa;
     background-color: rgba(25, 25, 25, 0.2);
+    /* Added font-size as I increased the padding above, as well as the height in .progress */
+    /* font-size: 15px; */
 }
 
 .progress-section {
     margin: 40px 20px;
 }
+
+/* --- Media Query for Mobile THINKING ABOUT THIS FOR THE Resume Skills --- */
 
 /* --- Work History --- */
 .history-heading {
